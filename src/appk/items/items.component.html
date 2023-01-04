@@ -1,0 +1,88 @@
+<div class="savebtn">
+  <a class="btn">Save</a>
+</div>
+<div class="nav-items">
+  <div class="items-row">
+        <div class="row">
+      <span class="col-md-6">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-folder-fill"></i>&nbsp; <span>Item</span>
+          </a>
+        </li>
+        <hr>
+        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-folder-fill"></i>&nbsp;<span class="QT"> QT1 Example Test</span>&nbsp;
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Characters and Plays</a></li>
+          <li><a class="dropdown-item" href="#">Chocolate Factory</a></li>
+          <li><a class="dropdown-item" href="#">Election in the United States</a></li>
+          <li><a class="dropdown-item" href="#">Identifying Sentence Errors</a></li>
+          <li><a class="dropdown-item" href="#">Modal Feedback</a></li>
+          <li><a class="dropdown-item" href="#">Periods of History</a></li>
+          <li><a class="dropdown-item" href="#">Rechard ||| (Take2)</a></li>
+          <li><a class="dropdown-item" href="#">The Space Shuttle, 30 years old</a></li>
+        </ul>
+      </span>
+    </div>
+
+
+    <div class="card" style="width: 28rem;">
+      <div class="card-header">
+        <h5 class="modal-title fs-9" id="ModalLabel">Edit Item</h5>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-5">
+            <label for="Label"><b>Label</b><span style="color: red;">*</span></label>
+          </div>
+          <div class="col-md-7">
+            <input type="text" class="form-control" placeholder="New Item">
+            
+          </div>
+          
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="Label"><b>Item Model</b></label>
+          </div>
+          <div class="col-md-7">
+            <input type="radio" style="accent-color: black;"> <b>QTl</b>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>  
+        
+    
+  </div>
+  <hr>
+  
+
+  <div class="downIcons">
+    <div class="down-icons">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="icon mt-1" *ngFor="let itemsicons of items1Array">
+            <a>
+              <i class="{{itemsicons.icons}}"></i>
+              <p>{{itemsicons.title}}</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="icon mt-1" *ngFor="let itemsicons of items2Array">
+            <a>
+              <i class="{{itemsicons.icons}}"></i>
+              <p>{{itemsicons.title}}</p>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
